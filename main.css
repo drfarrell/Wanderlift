@@ -236,12 +236,15 @@ header li {
 
 img {
   width: 100%;
-  max-width: 630px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   display: block;
   margin: auto;
+}
 
+#phone {
+    max-width: 630px;
 }
 
 /*-----------------------------Project Navigation---*/
