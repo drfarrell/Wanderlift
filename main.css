@@ -3,8 +3,14 @@ html, body {
     overflow-x: hidden;
 }
 
-::-moz-selection { background: #00B1FF; color: white}
-::selection { background: #00B1FF; color: white}
+::-moz-selection {
+    background: #8A00C0; color: white
+}
+::selection {
+    background: #8A00C0; color: white
+}
+
+
 
 * {
     margin: 0;
@@ -88,7 +94,6 @@ p {
   color: #8B8B8B;
   font-family: 'PT Serif', serif;
   font-size: 1.2em;
-  line-height: 1.6;
 }
 
 a {
@@ -100,14 +105,14 @@ a {
 
 a:hover {
   text-decoration:none;
-  color: #00B1FF;
+  color: #8A00C0;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
 a:hover_effect {
   text-decoration:none;
-  color: #00B1FF;
+  color: #8A00C0;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -126,11 +131,11 @@ a:hover_effect {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #00B1FF;
+  color: #8A00C0;
 }
 
 .navbar-default .navbar-nav > li > a:hover_effect {
-  color: #00B1FF;
+  color: #8A00C0;
 }
 
 .navbar {
@@ -199,7 +204,7 @@ header li {
 
 .br {
   padding: 2px;
-  background-color: #00B1FF;
+  background-color: #8A00C0;
 }
 
 .project {
@@ -227,21 +232,35 @@ header li {
   padding-bottom: 20px;
 }
 
-#copy h2 {
+#copy h2{
   text-align: center;
   font-size: 1.6em;
+}
+
+.decor {
+  z-index: 1;
+  position: relative;
+  top: -130px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decor p {
+  font-size: 10em;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.15;
+  color: rgba(255,90,95,1);
+  height: 30px;
+  line-height: 100px;
+
 }
 
 img {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  display: block;
-  margin: auto;
-}
-
-#phone {
-    max-width: 630px;
 }
 
 /*------------------------------------------Read More---*/
@@ -285,8 +304,6 @@ img {
   opacity: 0;
   visibility: hidden;
 }
-
-
 
 
 
