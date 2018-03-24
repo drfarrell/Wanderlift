@@ -3,14 +3,8 @@ html, body {
     overflow-x: hidden;
 }
 
-::-moz-selection {
-    background: #8A00C0; color: white
-}
-::selection {
-    background: #8A00C0; color: white
-}
-
-
+::-moz-selection { background: #00B1FF; color: white}
+::selection { background: #00B1FF; color: white}
 
 * {
     margin: 0;
@@ -94,6 +88,7 @@ p {
   color: #8B8B8B;
   font-family: 'PT Serif', serif;
   font-size: 1.2em;
+  line-height: 1.6;
 }
 
 a {
@@ -105,14 +100,14 @@ a {
 
 a:hover {
   text-decoration:none;
-  color: #8A00C0;
+  color: #00B1FF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
 a:hover_effect {
   text-decoration:none;
-  color: #8A00C0;
+  color: #00B1FF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -131,11 +126,11 @@ a:hover_effect {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #8A00C0;
+  color: #00B1FF;
 }
 
 .navbar-default .navbar-nav > li > a:hover_effect {
-  color: #8A00C0;
+  color: #00B1FF;
 }
 
 .navbar {
@@ -197,6 +192,12 @@ header li {
 
 /*------------------------------------------Project---*/
 
+video {
+  margin-top: 50px;
+  width: 480px;
+  height: 720px;
+}
+
 .overview {
   margin-bottom: -150px;
   margin-top: 20px;
@@ -204,7 +205,7 @@ header li {
 
 .br {
   padding: 2px;
-  background-color: #8A00C0;
+  background-color: #00B1FF;
 }
 
 .project {
@@ -232,35 +233,21 @@ header li {
   padding-bottom: 20px;
 }
 
-#copy h2{
+#copy h2 {
   text-align: center;
   font-size: 1.6em;
-}
-
-.decor {
-  z-index: 1;
-  position: relative;
-  top: -130px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.decor p {
-  font-size: 10em;
-  font-family: "Times New Roman", Times, serif;
-  opacity: 0.15;
-  color: rgba(255,90,95,1);
-  height: 30px;
-  line-height: 100px;
-
 }
 
 img {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+  display: block;
+  margin: auto;
+}
+
+#phone {
+    max-width: 630px;
 }
 
 /*------------------------------------------Read More---*/
@@ -304,6 +291,8 @@ img {
   opacity: 0;
   visibility: hidden;
 }
+
+
 
 
 
@@ -520,6 +509,10 @@ footer {
   padding-bottom: 20px;
  }
 
+ video {
+   width: 360px;
+   height: 540px;
+ }
 }
 
 
@@ -551,4 +544,11 @@ footer {
   padding-right: 0%;
  }
 
+}
+
+@media (max-width: 350px) {
+  video {
+    width: 288px;
+    height: 432px;
+  }
 }
