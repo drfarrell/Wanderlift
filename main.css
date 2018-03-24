@@ -50,10 +50,14 @@ h1 {
 }
 
 h2 {
-  /*font-family: 'PT Serif', serif;*/
-  font-weight: 300;
-  line-height: 120%;
+  font-weight: 100;
+  line-height: 140%;
   font-size: 2em;
+}
+
+span {
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -67,10 +71,24 @@ h4 {
   color: #8B8B8B;
 }
 
+h5 {
+  font-weight: 700;
+  font-size: 2.6em !important;
+}
+
+h6 {
+  font-weight: 100;
+  opacity: 0.8;
+  font-size: 1.45em !important;
+  padding-right: 25px;
+  line-height: 155%
+}
+
 p {
   color: #8B8B8B;
   font-family: 'PT Serif', serif;
   font-size: 1.2em;
+  line-height: 1.6;
 }
 
 a {
@@ -209,34 +227,13 @@ header li {
   padding-bottom: 20px;
 }
 
-#copy h2{
+#copy h2 {
   text-align: center;
   font-size: 1.6em;
 }
 
-.decor {
-  z-index: 1;
-  position: relative;
-  top: -130px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.decor p {
-  font-size: 10em;
-  font-family: "Times New Roman", Times, serif;
-  opacity: 0.15;
-  color: rgba(255,90,95,1);
-  height: 30px;
-  line-height: 100px;
-
-}
-
 img {
   width: 100%;
-
   padding-top: 15px;
   padding-bottom: 15px;
   display: block;
@@ -246,6 +243,9 @@ img {
 #phone {
     max-width: 630px;
 }
+
+
+
 
 /*-----------------------------Project Navigation---*/
 
@@ -454,8 +454,8 @@ footer {
   }
 
   .commentary {
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 0%;
+  padding-right: 0%;
   padding-top: 20px;
   padding-bottom: 20px;
  }
