@@ -244,6 +244,49 @@ img {
     max-width: 630px;
 }
 
+/*------------------------------------------Read More---*/
+
+.read-more {
+  position: relative;
+  text-decoration: none;
+  cursor: text;
+}
+
+.read-more .trigger {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.read-more .content {
+  position: relative;
+  overflow: hidden;
+  max-height: 200px;
+  transition: max-height 1200ms ease;
+}
+
+.read-more .content::before {
+  content: '';
+  background: linear-gradient(to bottom, rgba(253, 253, 253, 0) 0%, rgba(253, 253, 253, 1) 50%, rgba(253, 253, 253, 1) 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  transition: opacity 1200ms ease, visibility 1200ms ease;
+}
+
+.read-more.expanded .content {
+  max-height: 600px;
+}
+
+.read-more.expanded .content::before, .read-more.expanded .trigger {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 
 
 
